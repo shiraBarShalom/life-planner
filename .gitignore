@@ -1,0 +1,11 @@
+# Personal data – never commit
+private/
+js/seed-personal.js
+*.backup.json
+planner-backup-*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/

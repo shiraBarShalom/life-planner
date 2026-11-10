@@ -52,9 +52,9 @@ A service worker needs `http://localhost` or HTTPS; it won't work from `file://`
 
 ## Deploy (GitHub Pages)
 
-1. Push to GitHub.
-2. Go to Settings → Pages → *Deploy from a branch* → `main` / root.
-3. The site is served at `https://<user>.github.io/<repo>/`. All paths are relative, so it works from a subfolder.
+Live: **https://shirabarshalom.github.io/life-planner/**
+
+Deployment is automatic: every push to `main` runs `.github/workflows/pages.yml`, which publishes the site. Pages Source must be set to *GitHub Actions* in the repo settings. All paths are relative, so the app works from the `/life-planner/` subfolder.
 
 When you change files, bump `VERSION` in `sw.js` so installed apps pick up the update. The app shows a "גרסה חדשה זמינה" toast.
 
